@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates | Lokesh</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        .certificates {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
+        .certificates h1 {
+            color: #9d4edd;
+            margin-bottom: 30px;
+        }
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .cert-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(157, 78, 221, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(157, 78, 221, 0.5);
+        }
+        .cert-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .cert-card p {
+            font-size: 1rem;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Lokesh</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certificates.html" class="active">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Certificates Section -->
+    <section class="certificates" data-aos="fade-up">
+        <h1>My Certificates</h1>
+        <div class="cert-grid">
+            <div class="cert-card" data-aos="zoom-in">
+                <img src="images/cisco-pythonessentials1.jpg" alt="Certificate 1">
+                <p>Python Essentials 1 – Cisco Networking Academy</p>
+            </div>
+            <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="images/cisco-pythonessentials2.jpg" alt="Certificate 2">
+                <p>Python Essentials 2 – Cisco Networking Academy</p>
+            </div>
+            <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/salesforce.jpg" alt="Certificate 3">
+                <p>Salesforce Developer with Agent Champion</p>
+            </div>
+            <div class="cert-card" data-aos="zoom-in" data-aos-delay="300">
+                <img src="images/simplelearn-full stack.jpg" alt="Certificate 4">
+                <p>Full Stack Development – Simplilearn</p>
+            </div>
+            <div class="cert-card" data-aos="zoom-in" data-aos-delay="400">
+                <img src="images/cisco-advance c.jpg" alt="Certificate 5">
+                <p>Advanced C – Cisco Networking Academy</p>
+            </div>
+            <div class="cert-card" data-aos="zoom-in" data-aos-delay="500">
+                <img src="images/aws-generative ai.jpg" alt="Certificate 6">
+                <p>AWS Cloud Quest – Cloud Practitioner</p>
+            </div>
+                  <div class="cert-card" data-aos="zoom-in" data-aos-delay="600">
+                <img src="images/hackerrank-python.jpg" alt="Certificate 6">
+                <p>hackerrank – python</p>
+                  </div>
+                  <div class="cert-card" data-aos="zoom-in" data-aos-delay="700">
+                <img src="images/nptel-english.jpg" alt="Certificate 6">
+                <p>Nptel – English</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Lokesh. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
